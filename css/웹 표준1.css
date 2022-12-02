@@ -1,0 +1,21 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@300&display=swap');
+
+
+body{font-family: 'Noto Sans', sans-serif;overflow-x: hidden;}
+a {text-decoration: none; font-style: none;}
+
+/*header*/
+.Header {width: 100%;height: 80px;}
+.Header .inner {border-bottom:1px solid black; width: 1230px;display: flex;justify-content: space-between;align-items: center;position: relative;height: 100%;margin: 0 auto;}
+.inner .logo a {font-size: 25px; color: black;}
+.inner .logo a:hover {color: #ed3770;}
+.gnb_wrap > a {font-size: 22px; color: black; margin-left: 30px;}
+.gnb_wrap > a:hover {color: #ed3770;}
+
+/*swiper*/
+.swiper {width: 64%;height: 669px;}
+.swiper-size {position: relative;top: 20px;}
+.swiper-slide {text-align: center;font-size: 18px; background: #fff;display: flex;justify-content: center;align-items: center;}
+.swiper-slide .img{display: block;width: 800px; height: 551px;object-fit: cover;}
+

@@ -1,0 +1,141 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@300&display=swap');
+
+
+body{font-family: 'Noto Sans', sans-serif;overflow-x: hidden;}
+a {text-decoration: none; font-style: none;}
+
+/*header*/
+.Header {padding-top: 18px; width: 100%;height: 52px;}
+.Header .inner {border-bottom:2.5px solid #d7d8db; width: 1230px;display: flex;justify-content: space-between;align-items: center;position: relative;height: 100%;margin: 0 auto;}
+.inner .logo {width: 132px;font-size: 28px;cursor: pointer;font-family: 'Outfit';font-weight: 600;}
+.inner .logo a:hover {color: #ed3770;}
+.logo-color-1 {color:#4285f4;}
+.logo-color-2 {color:#ea4335;}
+.logo-color-3 {color:#fbbc05;}
+.logo-color-4 {color:#4285f4;}
+.logo-color-5 {color: #34a853;}
+.logo-color-6 {color:#ea4335;}
+.logo-color-7 {color:#fbbc05;}
+.logo-color-8 {color:#4285f4;}
+.logo-color-9 {color: #34a853;}
+.logostick {margin-right: -9px;}
+.gnb_wrap > a {font-size: 20px;color: black;margin-left: 12px;font-family: 'Outfit';}
+.gnb_wrap > a:hover {color: #ed3770;}
+
+/*col-1*/
+.col-1 {height: 500px;max-width: 1200px;margin-left: auto;margin-right: auto;}
+.col-header{position: relative; display: flex;flex-direction: column; height: 300px; width: 500px;}
+.col-header > span:first-child {padding-left: 167px; padding-top: 118px; font-size: 20px; font-weight: 600; color: #777474;}
+.col-header > span:nth-child(2) {padding-left:58px; padding-top:34px; font-size: 32px;}
+.btn-group {display: flex;flex-direction: row;padding-top: 60px; padding-left: 7px;}
+.btn-group > a > .btn {position: relative;border: none;margin-right: 72px; padding: 12px 23px;border-radius: 15px;font-family: "paybooc-Light", sans-serif;/*box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);*/
+  text-decoration: none;font-weight: 600;transition: 0.25s;background-color: aliceblue;color: #1e6b7b;}
+.btn-group > a > .btn:hover { position: relative;padding: 15px 30px;border-radius: 15px;font-family: "paybooc-Light", sans-serif;
+  color: #1e6b7b;background: aliceblue;box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);text-decoration: none;font-weight: 600;transition: 0.25s;border: 3px solid aliceblue;color: #1e6b7b;} 
+
+.header-img {position: relative; top: -240px; float: right; width: 400px;height: 285px;}
+
+/*article*/
+.section-article {background-color: #FFF5F5;}
+.section {max-width: 75rem;padding: 5.5rem 1rem;margin: 0 auto;}
+.section-menu {position: relative;display: flex;flex-wrap: wrap;height: 520px;padding: 3rem;margin: 0 auto 2rem;border-radius: 1rem;background-color: #fff;box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);}
+.section-col {overflow: hidden;/*width: 50%;*/margin-right: 3rem;}
+
+/*mockup*/
+.col-mockup {position: relative;width: 480px;}
+.mockup-1 {position: absolute;top: -235px;left: 155%;}
+.mockupimac {width: 400px;height: 300px;}
+.mockup1-1 {position: absolute;top: 4%;left: 200px;width: 375px;height: 67%;background: url(../images/삼성전기mockup.JPG) no-repeat;
+  background-size: cover;background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 20s linear 0s infinite alternate;}
+
+  @keyframes mockup_ani {
+  0% {background-position-y: 0;}
+  100% {background-position-y: 100%;}
+}
+.mockup-2 {position: absolute;top: 132px;left: 14%;}
+.mockup1-2 {position: absolute;top: 4%;left: 200px;width: 375px;height: 67%;background: url(../images/삼성전기mockup.JPG) no-repeat;
+  background-size: cover;background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 20s linear 0s infinite alternate;}
+
+  @keyframes mockup_ani {
+  0% {background-position-y: 0;}
+  100% {background-position-y: 100%;}
+}
+
+/*ection-col-1*/
+.section-col-1 {width: calc(50% - 3rem);margin-left:547px;margin-top: 13px;}
+.section-col-1 > .overview {height: 76px;margin-left: 20px;border-bottom: 1px solid #d7d8db;}
+.section-col-1 > .overview > p {line-height: 27px;}
+.section-col-1 > .overview > p::before {content: "✔";display: inline; padding-right: 0.5rem;}
+.section-col-1 > .overview > p > .text {color: #ed3770;}
+.view-header {margin-top: 33px;width: 795px;height: 131px;line-height: 27px;}
+.view-header > tbody > tr > th {/* border-bottom: 1px solid #e2e2e4;*/padding: 10px 22px; font-size: 15px; color: #222222; font-weight: 600;text-align: left;box-sizing: border-box;}
+.view-header > tbody > tr > th::before {content: "✔";display: inline; padding-right: 0.5rem;}
+.view-header > tbody > tr > td {/*border-bottom: 1px solid #e2e2e4;*/font-size: 15px;width: 337px; color: #727476;text-align: left;padding: 11px;box-sizing: border-box;line-height: 20px;}
+.view-header > tbody > tr > td > .text {color: #ed3770;}
+
+/*modal*/
+.btn {border: none;background-color: transparent;cursor: pointer;}
+.btn .text {color: #ed3770;font-weight: bold;}
+#modal.modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+#modal .modal-window {
+  background: rgba( 69, 139, 197, 0.70 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -2px;
+  padding: 10px;
+}
+#modal .title {
+  padding-left: 10px;
+  display: inline;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+  
+}
+#modal .title h2 {
+  display: inline;
+  font-size: 20px;
+}
+#modal .close-area {
+  display: inline;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+  font-size: 23px;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+}
+
+#modal .content {
+  margin-top: 20px;
+  padding: 0px 10px;
+  text-shadow: 1px 1px 2px gray;
+  color: white;
+}
+#modal .content img {border-radius: 20px;}
+
+#modal .content .content-1 {}
+#modal .content .content-2 {}
+#modal .content .content-3 {position: absolute;right: 48px;top: 76px;}

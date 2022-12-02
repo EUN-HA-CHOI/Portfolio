@@ -1,0 +1,88 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@300&display=swap');
+
+
+body{font-family: 'Noto Sans', sans-serif;overflow-x: hidden;}
+a {text-decoration: none; font-style: none;}
+
+/*header*/
+.Header {width: 100%;height: 80px;}
+.Header .inner {border-bottom:1px solid black; width: 1230px;display: flex;justify-content: space-between;align-items: center;position: relative;height: 100%;margin: 0 auto;}
+.inner .logo a {font-size: 25px; color: black;}
+.inner .logo a:hover {color: #ed3770;}
+.gnb_wrap > a {font-size: 22px; color: black; margin-left: 30px;}
+.gnb_wrap > a:hover {color: #ed3770;}
+
+/*col-1*/
+.col-1 {height: 500px;max-width: 1200px;margin-left: auto;margin-right: auto;}
+.col-header{position: relative; display: flex;flex-direction: column; height: 300px;width: 530px;}
+.col-header > span:first-child {padding-left: 159px; padding-top: 118px; font-size: 20px; font-weight: 600; color: #777474;}
+.col-header > span:nth-child(2) {padding-left:176px; padding-top:34px; font-size: 32px;}
+.btn-group {padding-top: 60px; padding-left: 154px;}
+.btn-group > a > .btn {position: relative;border: none;display: inline-block;margin-right: 72px; padding: 12px 23px;border-radius: 15px;font-family: "paybooc-Light", sans-serif;/*box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);*/
+  text-decoration: none;font-weight: 600;transition: 0.25s;background-color: aliceblue;color: #1e6b7b;}
+.btn-group > a > .btn:hover { position: relative;padding: 15px 30px;border-radius: 15px;font-family: "paybooc-Light", sans-serif;
+  color: #1e6b7b;background: aliceblue;box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);text-decoration: none;font-weight: 600;transition: 0.25s;border: 3px solid aliceblue;color: #1e6b7b;} 
+
+.header-img {position: relative; top: -258px;left: -92px;float: right; width: 400px;height: 285px;}
+.header-img > img {width: 550px; height: 300px;}
+
+/*mockup*/
+@keyframes mockup_ani {
+  0% {background-position-y: 0;}
+  100% {background-position-y: 100%;}
+}
+.col-mockup {position: relative;width: 480px;left: -17px;}
+.mockup {position: absolute;top: -235px;left: 155%;}
+.mockupimac {width: 389px;height: 325px;}
+.mockup1-1 {
+  position: absolute;
+  top: 6%;
+  border-radius: 22px;
+  left: 194px;
+  width: 179px;
+  height: 88%;
+  background: url(../images/screencapture-eun-ha-choi-github-io-LOCK-LOCK-WebProject-2022-11-25-15_43_20.png) no-repeat;
+  background-size: cover;
+  background-position: 0% 0%;
+  transform: translate(-50%, 0);
+  animation: mockup_ani 20s linear 0s infinite alternate;
+  }
+
+/*mockup2*/
+.mockup2 {position: absolute;top: 93px;left: 19%;}
+.mockup2-1 {
+  position: absolute;
+  top: 6%;
+  left: 194px;
+  border-radius: 20px;
+  width: 179px;
+  height: 88%;
+  background: url(../images/screencapture-eun-ha-choi-github-io-LOCK-LOCK-WebProject-2022-11-25-15_43_20.png) no-repeat;
+  background-size: cover;
+  background-position: 0% 0%;
+  transform: translate(-50%, 0);
+  animation: mockup_ani 20s linear 0s infinite alternate;
+  }
+
+
+
+/*article*/
+.section-article {background-color: #FFF5F5;}
+.section {max-width: 80rem;padding: 5.5rem 1rem;margin: 0 auto;}
+.section-menu {position: relative; display: flex;flex-wrap: wrap;height: 600px; padding: 3rem;margin: 0 auto 2rem;border-radius: 1rem;background-color: #fff;box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);}
+.section-col {overflow: hidden;/*width: 50%;*/margin-right: 3rem;}
+.section-col > .col-img { display: block;width:100%;height:600px; margin: 0 auto;}
+.section-col > .col-img > img {width: 430px;height: 300px;}
+.section-col-1 {width: calc(50% - 3rem);margin-left: 81px;}
+.section-col-1 > .overview {height: 225px;margin-left: 20px;padding-bottom: 9px;border-bottom: 1px solid #FC7E7E;}
+.section-col-1 > .overview > p {line-height: 27px;}
+.section-col-1 > .overview > p > .text {color: #ed3770;}
+.view-header {width:600px;height: 300px;line-height: 47px;}
+.view-header > tbody > tr > th {/* border-bottom: 1px solid #e2e2e4;*/padding: 10px 22px; font-size: 17px; color: #222222; font-weight: 600;text-align: left;box-sizing: border-box;}
+.view-header > tbody > tr > th::before {content: "✔";display: inline; padding-right: 0.5rem;}
+.view-header > tbody > tr > td {/*border-bottom: 1px solid #e2e2e4;*/font-size: 16px;color: #727476;text-align: left;padding: 12px;box-sizing: border-box;line-height: 22px;}
+
+
+
+
