@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project_Kakao App</title>
   <link rel="stylesheet" href="css/kakao.css">
+  <script defer src="js/tab.js"></script>
+  <script src="https://kit.fontawesome.com/acc4d8b9bf.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="Header">
@@ -23,19 +25,31 @@
            <span class="logo-color-9 logostick">o</span>
           </a>
          </div>
-        <nav class="gnb">
+         <nav class="gnb">
           <h2 class="blind">주메뉴</h2>
           <div class="gnb_wrap">
-            <a href="index.html" title="Project바로가기">Mein</a>
+            <a href="index.html" title="Project바로가기">Main</a>
             <a href="about me.html" title="about me바로가기">AboutMe</a>
             <a href="https://github.com/EUN-HA-CHOI" title="Github바로가기">Github</a>
+            <ul class="sub-menu">
+              <li>
+                <button type="button">Project<i class="fa-solid fa-chevron-down"></i></button>
+                <ul>
+                  <li><a href="삼성전기.html">삼성전기</a></li>
+                  <li><a href="cjone.html">cj one</a></li>
+                  <li><a href="락앤락.html">lock&lock</a></li>
+                  <li><a href="카카오톡.html">kakao app</a></li>
+                  <li><a href="넷플릭스.html">netflix</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-        </nav>   
+        </nav>     
       </div> 
     </header>
     <article class="col-1">
         <div class="col-header">
-            <span>Kakao React App - Kakao App</span>
+            <span>Kakao React Web App - Kakao App</span>
             <span>Kakao App</span>
             <div class="btn-group">
               <a href="#"><button type="button" class="btn">URL</button></a>
@@ -82,7 +96,7 @@
                 <tr>
                   <th><!--Suittable-->주요기능</th>
                   <td>
-                    22.00.00~22.00.00 (약 이주간)
+                    로그인 인증구현
                   </td>
                 </tr>
                 <tr>

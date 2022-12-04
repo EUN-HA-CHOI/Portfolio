@@ -11,15 +11,46 @@ window.addEventListener("scroll", (e) => {
     }
   }
 });*/
+
+
+/*로딩페이지*/
+  window.addEventListener('DOMContentLoaded', function()
+{
+// wrap none
+document.querySelector(".wrap").style.display='none';
+  var counter = 0;
+  var c = 0;
+  var i = setInterval(function(){
+    document.querySelector(".loading-page .counter h1").innerHTML=c + "%";
+    //document.querySelector(".loading-page .counter hr").style.width=c + "%";
+    document.querySelector(".loading-page .counter hr").style.display='block';
+    counter++;
+    c++;
+    if(counter == 101) {
+        clearInterval(i);
+        document.querySelector(".loading-page").style.display='none';
+        document.querySelector(".wrap").style.display='block';
+
+    }
+  }, 30);
+});
+  
+
+const subMenu = document.querySelector(".sub-menu>li>button");
+const subMenus = document.querySelector(".sub-menu>li>ul");
+
+subMenu.addEventListener("click",()=>{
+  subMenus.classList.toggle("on");
+});
+
 /*scrollTop*/
 const scrollTop1 = document.querySelector(".scrollTop1");
 const scrollTop2 = document.querySelector(".scrollTop2");
 const scrollTop3 = document.querySelector(".scrollTop3");
 const scrollTop4 = document.querySelector(".scrollTop4");
-const scrollTop5 = document.querySelector(".scrollTop5");
-const scrollTop6 = document.querySelector(".scrollTop6");
-const scrollTop7 = document.querySelector(".scrollTop7");
-const scrollTop8 = document.querySelector(".scrollTop8");
+const scrollTop5 = document.querySelector(".scrollTop6");
+const scrollTop6 = document.querySelector(".scrollTop7");
+const scrollTop7 = document.querySelector(".scrollTop8");
 
 window.addEventListener('scroll',() => {
   let scroll = document.querySelector('html').scrollTop;
@@ -33,32 +64,21 @@ window.addEventListener('scroll',() => {
     scrollTop3.style.opacity = 1;
     scrollTop4.style.opacity = 1;
   }
-  if(scroll > 1320) {
+  if(scroll > 1280) {
     scrollTop5.style.opacity = 1;
-    scrollTop6.style.opacity = 1;
   }
-  if(scroll > 1320) {
-    scrollTop5.style.opacity = 1;
-    scrollTop6.style.opacity = 1;
-  }
+
 })
 
+// footer top버튼
+const topBtn = document.querySelector(".top_btn"); 
 
-const modal = document.getElementById("modal")
-const btnModal = document.getElementById("btn-modal")
-btnModal.addEventListener("click", e => {
-    modal.style.display = "flex"
+topBtn.addEventListener("click",(e)=>{
+    e.preventDefault();
+    window.scroll({
+        top:0,
+        left:0,
+        behavior:"smooth"
+    })
 })
 
-const closeBtn = modal.querySelector(".close-area")
-closeBtn.addEventListener("click", e => {
-    modal.style.display = "none"
-})
-
-modal.addEventListener("click", e => {
-  const evTarget = e.target
-  if(evTarget.classList.contains("modal-overlay")) {
-      modal.style.display = "none"
-  }
-})
- 

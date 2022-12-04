@@ -6,19 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
   <link rel="stylesheet" href="css/about.css">
+  <script defer src="js/tab.js"></script>
   <script src="https://kit.fontawesome.com/acc4d8b9bf.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <section class="about-1">
-    <nav class="nav_bar">
-      <h1 class="nav_bar-h1"><a href="index.html">About Me</a></h1>
-      <div class="nav_menu">
-        <ul>
-          <li><a href="index.html">Mein</a></li>
-          <li><a href="https://github.com/EUN-HA-CHOI">Github</a></li>
-        </ul>
-      </div>
-    </nav>
+    <header class="Header">
+      <div class="inner">
+        <div class="logo">
+          <a href="index.html">
+           <span class="logo-color-1 logostick">P</span>
+           <span class="logo-color-2 logostick">o</span>
+           <span class="logo-color-3 logostick">r</span>
+           <span class="logo-color-4 logostick">t</span>
+           <span class="logo-color-5 logostick">f</span>
+           <span class="logo-color-6 logostick">o</span>
+           <span class="logo-color-7 logostick">l</span>
+           <span class="logo-color-8 logostick">i</span>
+           <span class="logo-color-9 logostick">o</span>
+          </a>
+         </div>
+         <nav class="gnb">
+          <h2 class="blind">주메뉴</h2>
+          <div class="gnb_wrap">
+            <a href="index.html" title="Project바로가기">Main</a>
+            <a href="about me.html" title="about me바로가기">AboutMe</a>
+            <a href="https://github.com/EUN-HA-CHOI" title="Github바로가기">Github</a>
+            <ul class="sub-menu" >
+              <li>
+                <button type="button" id="button">Project<i class="fa-solid fa-chevron-down"></i></button>
+                <ul id="ul">
+                  <li><a href="삼성전기.html">삼성전기</a></li>
+                  <li><a href="cjone.html">cj one</a></li>
+                  <li><a href="락앤락.html">lock&lock</a></li>
+                  <li><a href="카카오톡.html">kakao app</a></li>
+                  <li><a href="넷플릭스.html">netflix</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>    
+      </div> 
+    </header>
     <div class="content">
       <div class="col-img" style="width: 300px; height: 300px; border-radius: 50%;">
         <img src="images/KakaoTalk_20221124_172621207.jpg" alt="" class="myimg" >
@@ -41,9 +70,7 @@
     </div>
   </section>
   <section class="about-2" style="height: 300px">
-      <div class="h1">
-        <h1>Contect</h1>
-      </div>
+  
     <div class="content-1">
       <p><i class="fa-solid fa-calendar-week"></i>
         <span class="con txt">생년월일</span>

@@ -3,8 +3,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
 
-body {height: 100%;font-family:'Noto Sans', sans-serif;}
+body {height: 100%;font-family:'Noto Sans', sans-serif; }
 a {text-decoration: none;color: black;}
+
+  
+  @media screen and (max-width:767px) {
+  /* 모바일 */
+  }
+
+  @media screen and (max-width:1023px) {
+    /* 타블렛 */
+    }
+
+/*로딩페이지*/
+.loading-logo{font-size: 60px;position: relative;top: -235px;}
+.loadingstick {margin-right: -17px;}
+.loadingimg {position: absolute;top: -67px;left: 61px;}
+.loading-page {background: #fff;width: 100vw;height: 100vh;display: flex;justify-content: center;align-items: center;}
+.loading-page .counter {text-align: center;}
+.loading-page .counter p {font-size: 40px;font-weight: 100;color: #f60d54;}
+.loading-page .counter h1 {color: black;font-family: 'Outfit';font-size: 50px;margin-top: -10px;}
+.loading-page .counter hr {width: 100%;background: #E4E4E4;animation: 3s linear loading;transform-origin: 0%;animation-fill-mode:forwards;}
+
+@keyframes loading {
+0% {
+  transform: scaleX(0);
+}
+100% {
+  transform: scaleX(100%);
+}
+}
+.loading-page .counter {position: relative;width: 250px;}
+.loading-page .counter h1.abs {position: absolute;top: 0;width: 100%;}
+.loading-page .counter .color {width: 0px;overflow: hidden;color: #f60d54;}
 
 /*nav*/
 .nav_bar {border-bottom:2.5px solid#d7d8db;width: 1230px;margin: 0 auto;display: flex;justify-content: space-between;box-sizing: border-box;padding: 22px 0px 0;padding-bottom: 9px;}
@@ -15,11 +46,28 @@ a {text-decoration: none;color: black;}
 .logo-color-3 {color:#fbbc05;}
 .logo-color-4 {color:#4285f4;}
 .logo-color-5 {color: #34a853;}
+.logo-color-6 {color:#ea4335;}
+.logo-color-7 {color:#fbbc05;}
 .logostick {margin-right: -5px;}
 .logostick2 {margin-right: -16px;}
 .nav_sub ul {position: relative;right: 13px;display: flex;flex-direction: row;}
 .nav_sub ul li > a {padding-right: 23px;font-size: 27px;}
 .nav_sub ul li {display: flex;}
+.nav_sub ul li:nth-child(2) {display: flex; flex-direction: column;}
+
+/*nav-menu*/
+.nav_menu {display: flex;flex-direction: row;height: 0;padding-right: 19px;}
+.nav-menu1 {position: relative;top: 17px; color: #555;}
+.nav-menu1:hover {color: #ed3770;}
+.sub-menu > a:hover {color: #ed3770;}
+.nav_menu>.sub-menu>li{ position: relative;width: 100%;padding: 18px 0;}
+.nav_menu>.sub-menu>li  button{display: block;padding-left: 26px;cursor: pointer;border: none;outline: none;background: transparent;font-size: 17px;color: #555;} 
+.nav_menu>.sub-menu>li  button:hover {color: #ed3770;}
+.nav_menu> .sub-menu>li  i{position: absolute;right: -16px;top: 20px;}
+.nav_menu> .sub-menu>li>ul{display: none;position: absolute;margin-top: 9px;width: 89px;padding: 10px;border-radius: 10%;background-color: #FFF5F5;font-size: 14px;font-weight: 500;}
+.nav_menu > .sub-menu>li>ul.on{display: block;}
+.nav_menu > .sub-menu>li>ul>li{line-height: 1.5;display: -webkit-inline-box;padding-left: 14px;}
+.nav_menu > .sub-menu>li>ul>li>a:hover{color: #ed3770;font-family: 'Outfit';text-decoration: underline;}
 
 /*header*/
 header {overflow: hidden;top: 0; margin: 0; width: 100%;display: flex;flex-direction: row;justify-content: center;text-align: center;}
@@ -34,10 +82,9 @@ header {overflow: hidden;top: 0; margin: 0; width: 100%;display: flex;flex-direc
 .ico-1 {position: absolute;right: 42px; font-size: 24px;color: lightgray;}
 
 /**/
-.contect_menu {position: relative; top: 112px;left: -9px;display: flex;flex-wrap: wrap;justify-content: center;}
-.contect_menu img {border-radius: 50%;}
-.contect1{padding-right: 56px;}
-
+.contect_menu {position: relative;top: 99px;left: 49px;height: 100px; display: flex;flex-wrap: wrap;justify-content: center;}
+.skill{display: grid;grid-template-columns: repeat(8, 1fr);gap: 11px;}
+.skilltext {display: flex;position: relative;left: -69px;flex-direction: column;justify-content: center;padding-top: 44px;}
 
 /**/
 .center-con {display: flex;align-items: center;justify-content: center;}
@@ -116,4 +163,8 @@ header {overflow: hidden;top: 0; margin: 0; width: 100%;display: flex;flex-direc
 
 
 /*footer*/
-footer {height: 150px;width: 1230px;border-bottom:1px solid#d7d8db;}
+footer{height: 150px;width: 1230px;}
+.top_btn{position: absolute;right: 67px;display:block;padding: 10px 15px;border-radius: 23px; background: #ccc;transition: all 0.3s linear 0s;}
+.top_btn i{font-size: 18px;color: #fff;}
+.top_btn span{display: inline-block;text-indent: -9999px;overflow: hidden;}
+.top_btn:hover{background-color: #ddd;}        

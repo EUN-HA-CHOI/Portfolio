@@ -11,6 +11,32 @@
   <script src="https://kit.fontawesome.com/acc4d8b9bf.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!---로딩페이지-->
+  <div class="loading-page">
+    <div class="counter">
+      <div class="loading-logo">
+      <span class="logo-color-1 loadingstick">l</span>
+      <span class="logo-color-2 loadingstick">o</span>
+      <span class="logo-color-3 loadingstick">a</span>
+      <span class="logo-color-4 loadingstick">d</span>
+      <span class="logo-color-5 loadingstick">i</span>
+      <span class="logo-color-6 loadingstick">n</span>
+      <span class="logo-color-7 loadingstick">g</span>
+      </div>
+      <div class="loadingimg">
+        <img src="images/Ellipse 4.png" alt="이미지">
+      </div>
+      <h1>0%
+        <!--
+        h1.abs loading
+        h1.abs.color loading
+        -->
+      </h1>
+      <hr/>
+    </div>
+  </div>
+  <!--//로딩페이지-->
+  <!--wrap-->
   <div class="wrap">
     <!--nav-->
     <nav class="nav_bar">
@@ -23,11 +49,37 @@
         <span class="logo-color-5 logostick">a</span>
        </a>
      </div>
+     <!--
+     <div class="nav-menu">
+       <a href="about me.html" class="nav-menu1"><span>AboutMe</span></a>
+       <ul class="family_sites">
+        <li>
+          <button type="button">Project<i class="fa-solid fa-chevron-right"></i></button>
+          <ul>
+            <li><a href="#">삼성전기</a></li>
+            <li><a href="#">cj one</a></li>
+            <li><a href="#">lock&lock</a></li>
+            <li><a href="#">kakao app</a></li>
+            <li><a href="#">netflix</a></li>
+          </ul>
+        </li>
+      </ul>
+     </div>
+     -->
      
-      <div class="nav_sub">
-        <ul>
-          <li><a href="https://github.com/EUN-HA-CHOI"><i class="fa-brands fa-github"></i></a></li>
-          <li><img src="images/Ellipse 4.png" alt="캐릭터 이미지" style="width: 36px;"></li>
+      <div class="nav_menu">
+        <a href="about me.html" class="nav-menu1"><span>AboutMe</span></a>
+        <ul class="sub-menu">
+          <li>
+            <button type="button">Project<i class="fa-solid fa-chevron-down"></i></button>
+            <ul>
+              <li><a href="삼성전기.html">삼성전기</a></li>
+              <li><a href="cjone.html">cj one</a></li>
+              <li><a href="락앤락.html">lock&lock</a></li>
+              <li><a href="카카오톡.html">kakao app</a></li>
+              <li><a href="넷플릭스.html">netflix</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
@@ -62,17 +114,15 @@
         </div>
          -->
         <div class="contect_menu">
-          <div class="contect1">
-            <a href="about me.html">
-              <div><img src="images/KakaoTalk_20221124_172621207.jpg" alt="사진" style="width: 55px;height: 55px; padding-top: 7px;"></div>
-              <div>About Me</div>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <div ><img src="images/20221124_175150.png" alt="사진" style="width: 60px;height: 60px;"></div>
-              <div>Project</div>
-            </a>
+          <div class="skill">
+            <div><img src="images/html-1.png" alt="HTML" style="width: 50px;height: 50px; padding-top: 7px;"></div>
+            <div class="skilltext">HTML</div>
+            <div><img src="images/css-1.png" alt="사진" style="width: 50px;height: 50px; padding-top: 7px;"></div>
+            <div class="skilltext">CSS</div>
+            <div><img src="images/javascript-1.png" alt="사진" style="width: 50px;height: 50px; padding-top: 7px;"></div>
+            <div class="skilltext">Javascript</div>
+            <div><img src="images/react-1.png" alt="사진" style="width: 50px;height: 50px; padding-top: 7px;"></div>
+            <div class="skilltext">REACT</div>
           </div>
         </div>
         <div class="contect" >
@@ -87,7 +137,7 @@
     <div class="portfolio-items container large" id="casestudies">
       <div class="section animated">
         <div class="col col-item" style="padding-top:50px;">
-          <!--삼성전기-->
+          <!--
           <div class="center-con">
             <p>Img Hover</p>
             <div class="round">
@@ -97,12 +147,13 @@
                 <span class="arrow"></span>
             </div>
           </div>
-
+          -->
+           <!--삼성전기-->
             <div class="img-container scrollTop1" id="imgContainer">
               <img src="images/main-sam.jpg" alt="삼성전기">
               <div id="work-description">
                 <h3>Project</h3>
-                <p> Web Site</p>
+                <p>Web Site</p>
                 <p>Samsung Electro-Mechanics</p>
                 <a href="삼성전기.html" class="more-btn">
                   <button><span>Read More</span></button>
@@ -151,7 +202,7 @@
               <img src="images/main-kakao.jpg" alt="Kakao Talk">
               <div id="work-description">
                 <h3>Project</h3>
-                <p>React App</p>
+                <p>React web App</p>
                 <p>Kakao Talk App</p>
                 <a href="카카오톡.html" class="more-btn">
                   <button><span>Read More</span></button>
@@ -163,7 +214,7 @@
               <img src="images/main-net.jpg" alt="Netfilx App">
               <div id="work-description">
                 <h3>Project</h3>
-                <p>React App</p>
+                <p>React web App</p>
                 <p>Netfilx App</p>
                 <a href="넷플릭스.html" class="more-btn">
                   <button><span>Read More</span></button>
@@ -173,7 +224,7 @@
         </div>
       </div>
     </div>
-  <div class="skill-menu">
+   <div class="skill-menu">
     <h3>SKILLS</h3>
     <div class="skill-grid">
       <div class="skill-col">
@@ -205,9 +256,9 @@
           사용한 기본적인 문서
           설계가 가능합니다.</div>-->
       </div>
-    </div>  
-  </div>
-  <div class="skill-menu Available">
+     </div>  
+    </div>
+   <div class="skill-menu Available">
       <h3>Available Tools</h3>
     <div class="skill-grid">
       <div class="skill-col skill2">
@@ -255,10 +306,14 @@
         <div>gh-pages</div>
       </div>
     </div>
+   </div>
+   <footer>
+    <div>
+      <a href="#" class="top_btn"><span>top</span><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+   </footer>
   </div>
-  <footer>
-    <div></div>
-  </footer>
+  <!--//wrap-->
 </body>
 
 </html>
