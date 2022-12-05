@@ -13,7 +13,7 @@ window.addEventListener("scroll", (e) => {
 });*/
 
 
-/*로딩페이지*/
+/*로딩페이지 */
   window.addEventListener('DOMContentLoaded', function()
 {
 // wrap none
@@ -34,7 +34,7 @@ document.querySelector(".wrap").style.display='none';
     }
   }, 30);
 });
-  
+ 
 
 const subMenu = document.querySelector(".sub-menu>li>button");
 const subMenus = document.querySelector(".sub-menu>li>ul");
@@ -48,9 +48,8 @@ const scrollTop1 = document.querySelector(".scrollTop1");
 const scrollTop2 = document.querySelector(".scrollTop2");
 const scrollTop3 = document.querySelector(".scrollTop3");
 const scrollTop4 = document.querySelector(".scrollTop4");
-const scrollTop5 = document.querySelector(".scrollTop6");
-const scrollTop6 = document.querySelector(".scrollTop7");
-const scrollTop7 = document.querySelector(".scrollTop8");
+const scrollTop5 = document.querySelector(".scrollTop5");
+const scrollTop6 = document.querySelector(".scrollTop6");
 
 window.addEventListener('scroll',() => {
   let scroll = document.querySelector('html').scrollTop;
@@ -64,8 +63,9 @@ window.addEventListener('scroll',() => {
     scrollTop3.style.opacity = 1;
     scrollTop4.style.opacity = 1;
   }
-  if(scroll > 1280) {
+  if(scroll > 1100) {
     scrollTop5.style.opacity = 1;
+    scrollTop6.style.opacity = 1;
   }
 
 })

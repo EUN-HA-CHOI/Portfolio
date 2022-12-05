@@ -3,7 +3,7 @@
 
 body {height: 100%;font-family:'Noto Sans', sans-serif;}
 section {height: 600px;max-width: 1240px;margin-left: auto;margin-right: auto;}
-a {text-decoration: none;color: black; font-size: 15px;color: black;}
+a {text-decoration: none;color: black; font-size: 15px;color: black;cursor: pointer;}
 
 /*about-1*/
 .content {display: flex;flex-direction: row;}
@@ -28,7 +28,7 @@ header {padding-top: 19px;}
 .logo-color-7 {color:#fbbc05;}
 .logo-color-8 {color:#4285f4;}
 .logo-color-9 {color: #34a853;}
-.logostick {margin-right: -9px;font-size: 24px;}
+.logostick {margin-right: -5px;font-size: 24px;}
 
 /*gnb*/
 .gnb {padding-right: 35px;}

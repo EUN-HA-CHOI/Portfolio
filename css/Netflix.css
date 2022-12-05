@@ -56,14 +56,11 @@ a {text-decoration: none; font-style: none;}
 .col-mockup {position: relative;width: 391px;left: -65px;top: -28px;}
 .mockup {position: absolute;top: -235px;left: 192%;}
 .mockup video{position: absolute;top: 6%;left: 50%;border-radius: 20px; width: 46%;object-fit: fill;height: 88%;background-size: cover;background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 15s linear 0s infinite alternate;}
-.mockupimac {width: 319px;height: 368px;}
-.mockup1-1 { position: absolute;top: 6%;border-radius: 22px;left: 160px;width: 147px;height: 88%;
-  background: url(../images/screencapture-eun-ha-choi-github-io-LOCK-LOCK-WebProject-2022-11-25-15_43_20.png) no-repeat; background-size: cover; background-position: 0% 0%; transform: translate(-50%, 0);animation: mockup_ani 20s linear 0s infinite alternate;}
+.mockupimac {width:390px;height: 398px;}
+
 /*mockup2*/
 .mockup2 {position: absolute;top: 108px;left: 22%;}
 .mockup2 video{position: absolute;top: 6%;left: 50%;border-radius: 20px;width: 46%;object-fit: fill;height: 88%;background-size: cover; background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 15s linear 0s infinite alternate;}
-.mockup2-1 {position: absolute;top: 6%;left: 161px;border-radius: 20px;width: 148px;height: 88%;
-  background: url(../images/screencapture-eun-ha-choi-github-io-LOCK-LOCK-WebProject-2022-11-25-15_43_20.png) no-repeat;background-size: cover;background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 20s linear 0s infinite alternate;}
 
 /*article*/
 .section-article {background-color: #FFF5F5;}

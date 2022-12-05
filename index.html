@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>최은하 Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/index.css">
   <script defer src="js/text.js"></script>
   <script defer src="js/index.js"></script>
@@ -27,10 +28,7 @@
         <img src="images/Ellipse 4.png" alt="이미지">
       </div>
       <h1>0%
-        <!--
-        h1.abs loading
-        h1.abs.color loading
-        -->
+
       </h1>
       <hr/>
     </div>
@@ -78,6 +76,7 @@
               <li><a href="락앤락.html">lock&lock</a></li>
               <li><a href="카카오톡.html">kakao app</a></li>
               <li><a href="넷플릭스.html">netflix</a></li>
+              <li><a href="pure_css.html">pure css</a></li>
             </ul>
           </li>
         </ul>
@@ -96,7 +95,7 @@
               <span class="logo-color-5 logostick2">a</span>
              </a>
           </span>
-         <div class="txt">
+         <div class="hellotxt">
           <div class="ico">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
@@ -125,16 +124,19 @@
             <div class="skilltext">REACT</div>
           </div>
         </div>
-        <div class="contect" >
-          <p class="blind"><i class="fa-solid fa-phone"></i></p>
-          <p class="blind"><i class="fa-solid fa-envelope"></i></p>
-          <p class="blind"><i class="fa-brands fa-github"></i><a href="https://github.com/EUN-HA-CHOI"></a></p>
-        </div>
+
         
       </div>
+     
     </header>
+   
     <!--//header-->
     <div class="portfolio-items container large" id="casestudies">
+      <div id="mouse-scroll">
+        <div class="mouse">
+            <div class="mouse-in"></div>
+        </div>
+      </div>
       <div class="section animated">
         <div class="col col-item" style="padding-top:50px;">
           <!--
@@ -171,18 +173,18 @@
                 </a>
               </div>
             </div>
-          <!--ui
+          
             <div class="img-container scrollTop5" id="imgContainer">
-              <img src="images/main-sam.jpg" alt="UL&UX App">
+              <img src="images/emoji.jpg" alt="UL&UX App">
               <div id="work-description">
-                <h3>Project</h3>
+                <h3>pure css</h3>
                 <p></p>
-                <p>UL&UX App</p>
-                <a href="ui&ux.html" class="more-btn">
+                <p>facebook emoji</p>
+                <a href="pure_css.html" class="more-btn">
                   <button><span>Read More</span></button>
                 </a>
               </div>
-            </div>-->
+            </div>
         </div>
         <div class="col col-item">
           <!-- cj-->
@@ -278,7 +280,7 @@
         <div>styled components</div>
       </div>
       <div class="skill-col skill2">
-        <img src="images/vs code.png" alt="vs code" style="width: 66px;" height="66px">
+        <img src="images/Visual_Studio_Code_1.35_icon.svg.png" alt="vs code" style="width: 66px;" height="66px">
         <div>vs code</div>
       </div>
       <div class="skill-col skill2">
@@ -307,6 +309,54 @@
       </div>
     </div>
    </div>
+   <article class="aboutme">
+    <div class="content">
+      <h3>AboutMe</h3>
+      <div class="col-img" style="width: 300px; height: 300px; border-radius: 50%;">
+        <img src="images/KakaoTalk_20221124_172621207.jpg" alt="" class="myimg" >
+        <div class='box'>
+          <div class='wave -one'></div>
+          <div class='wave -two'></div>
+          <div class='wave -three'></div>
+        </div>
+      </div>
+      <div class="content-low">
+        <h3>안녕하세요! 포기 하지 않는 프론트 엔드 개발자, 최은하 입니다.</h3>
+        <strong>“안 되면 될 때까지 “</strong>
+        <p>
+          웹 표준 및 웹 접근성을 준수하고 견고하여 UI를 만들어내는 <br>
+          프론트엔드 개발자, 최은하 입니다. 저의 장점은 포기 하지 않는 자세 입니다. <br>
+          개발자에겐 역량도 중요하지만 협업을 함에 있어 자신에게 주어진 책임을 끝까지 완수하는 <br>
+          끈기 또한 필요하다 생각합니다.팀원들에게 <span class="text">“믿고 맡길 수 있는 개발자”</span>로 인정받고 싶습니다.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="about-2">
+    <div class="content-1">
+      <p><i class="fa-solid fa-calendar-week"></i>
+        <span class="con txt">생년월일</span>
+        <span class="con num">99.01.15</span>
+      </p>
+      <p><i class="fa-solid fa-phone"></i>
+        <span class="con txt">연락처</span>
+        <span class="con num">010-5008-2699</span>
+      </p>
+      <p><i class="fa-solid fa-envelope"></i>
+        <span class="con txt">이메일</span>
+        <span class="con num">dbwjepdlxj@naver.com</span>
+      </p>
+      <p><i class="fa-brands fa-github"></i>     
+        <span class="con-1 txt">Github</span> 
+        <a href="https://github.com/EUN-HA-CHOI">
+          <span class="num-1">https://github.com/EUN-HA-CHOI</span>
+        </a>
+
+    </p>
+    </div>
+
+  </section>
+   </article>
    <footer>
     <div>
       <a href="#" class="top_btn"><span>top</span><i class="fa-solid fa-arrow-up"></i></a>

@@ -66,17 +66,16 @@ a {text-decoration: none;color: black;}
 .nav_menu> .sub-menu>li  i{position: absolute;right: -16px;top: 20px;}
 .nav_menu> .sub-menu>li>ul{display: none;position: absolute;margin-top: 9px;width: 89px;padding: 10px;border-radius: 10%;background-color: #FFF5F5;font-size: 14px;font-weight: 500;}
 .nav_menu > .sub-menu>li>ul.on{display: block;}
-.nav_menu > .sub-menu>li>ul>li{line-height: 1.5;display: -webkit-inline-box;padding-left: 14px;}
+.nav_menu > .sub-menu>li>ul>li{line-height:2;display: -webkit-inline-box;padding-left: 14px;}
 .nav_menu > .sub-menu>li>ul>li>a:hover{color: #ed3770;font-family: 'Outfit';text-decoration: underline;}
 
 /*header*/
 header {overflow: hidden;top: 0; margin: 0; width: 100%;display: flex;flex-direction: row;justify-content: center;text-align: center;}
 .header_container {position: relative; width: 560px;height: 380px; padding-top: 23px;padding-bottom: 100px;}
-
 .header_container p > i {margin-right: 12px;}
 
 /*검색창*/
-.txt {z-index: 1; position: relative;top: 43px;left: 3px;display: flex;align-items: center;width: 100%;height: 50px;border: 1px solid #d7d8db;border-radius: 25px;box-shadow: inset 0px 1px 5px 0 rgb(0 0 0 / 10%);}
+.hellotxt {z-index: 1; position: relative;top: 43px;left: 3px;display: flex;align-items: center;width: 100%;height: 50px;border: 1px solid #d7d8db;border-radius: 25px;box-shadow: inset 0px 1px 5px 0 rgb(0 0 0 / 10%);}
 .hello {padding: 32px;animation:cursor 0.2s ease infinite;}
 .ico {font-size: 23px;color: lightgray;margin-left: 24px;}
 .ico-1 {position: absolute;right: 42px; font-size: 24px;color: lightgray;}
@@ -86,15 +85,61 @@ header {overflow: hidden;top: 0; margin: 0; width: 100%;display: flex;flex-direc
 .skill{display: grid;grid-template-columns: repeat(8, 1fr);gap: 11px;}
 .skilltext {display: flex;position: relative;left: -69px;flex-direction: column;justify-content: center;padding-top: 44px;}
 
-/**/
-.center-con {display: flex;align-items: center;justify-content: center;}
-.center-con > p {border-bottom: 3.5px solid #ddd;width: 151px;color: gray;border-radius: 0px;}
-.round {position: relative;border: 3.5px solid #ddd;width: 40px;height: 40px;left: -22px;top: -1px;border-radius: 100%;}
-.arrow {z-index: 999;height: 3px;margin:1px;width: 20px;background: #ddd;transition: 0.4s ease;}
-.arrow:first-child {display: block;position: absolute;transform: rotate(45deg);left: 2px;top: 23px;bottom: 35%;}
-.arrow:nth-child(2) {display: block;position: absolute;transform: rotate(-45deg);left: 38%;bottom: 29%;}
-.round:hover span:nth-child(1) {transform: rotate(-135deg);}
-.round:hover span:nth-child(2) {transform: rotate(135deg);}
+/*mouse*/
+#mouse-scroll {
+  position: fixed;
+  margin: auto;
+  left: 50%;
+  bottom: 30px;
+  -webkit-transform: translateX(-50%);
+  z-index: 9999;
+}
+#mouse-scroll .mouse {
+  height: 30px;
+  width: 17px;
+  border-radius: 10px;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  border: 2px solid darkgray;
+  top: 170px;
+}
+#mouse-scroll .mouse-in {
+  height: 8px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background:darkgray;
+  position: relative;
+  -webkit-animation: animated-mouse 1.2s ease infinite;
+}
+
+@-webkit-keyframes animated-mouse {
+  0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+  }
+  100% {
+       opacity: 0;
+      -webkit-transform: translateY(6px);
+      -ms-transform: translateY(6px);
+      transform: translateY(6px);
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 
 /*container*/
 .container {margin-left: auto;margin-right: auto;position: relative;}
@@ -161,6 +206,45 @@ header {overflow: hidden;top: 0; margin: 0; width: 100%;display: flex;flex-direc
 .skill-col > div:nth-child(3) {color: dimgray;padding-left: 15px;padding-right: 16px;}
 .skill2 {height: 150px;}
 
+.Available {border-bottom: 2px solid #d7d8db;padding-bottom: 50px;}
+
+/*aboutme*/
+.aboutme{width: 1230px;margin: 0 auto;padding-top: 70px;}
+.aboutme h3 {font-size: 20px;padding-bottom: 45px;}
+.content {display: flex;flex-direction: row;}
+.col-img {padding-top: 70px;padding-left: 78px;}
+.myimg { z-index: 1; width: 295px;height: 306px;border-radius: 50%;position: relative;top: 29px;left: -1px;border-radius: 50%;}
+.content-low {padding-top: 116px;margin-left: 100px;display: flex;flex-direction: column;}
+.content-low h3 {font-size: 25px;font-weight: initial;}
+.content-low strong {color: #ed3770;font-weight: bold; font-size: 17px; line-height: 4;}
+.content-low p {line-height: 2; font-size: 16px; }
+.content-low p > .text {color: #ed3770;font-weight: bolder;}
+
+/*box*/
+.box {display: flex;justify-content: center;align-items: center; width: 600px; height: 540px;border-radius: 5px; margin: 0 auto;
+  box-shadow: 0 2px 30px rgba(black, .2);background: lighten(#f0f4c3, 10%);position: relative;    top: -476px;
+  left: -193px;overflow: hidden;transform: translate3d(0, 0, 0);}
+.wave {opacity: .4;position: absolute;top: 3%;left:173px;background: #0af;
+  width: 336px;height: 331px;margin-top: 179px;transform-origin: 50% 48%;border-radius: 43%;animation: drift 3000ms infinite linear;}
+.wave.-three {animation: drift 5000ms infinite linear;}
+.wave.-two {animation: drift 7000ms infinite linear;opacity: .1;background: yellow;}
+.box:after {content: '';display: block;left: 0;top: 0;width: 100%;
+  height: 100%;background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));z-index: 11;transform: translate3d(0, 0, 0);}
+  @keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+/*about-2*/
+.about-2 {height: 135px;padding-top: 122px;}
+.content-1 {display: flex;-webkit-flex-flow: row wrap;-webkit-justify-content: space-between;-webkit-box-pack: justify;position: relative; top: 30px; left: 84px;line-height: 2;}
+.content-1 > p {display: flex;flex-direction: column;padding-right: 123px;font-size: 18px;}
+.content-1 > p > i {margin-right: 12px;}
+.content-1 > p > .con {margin-top: -27px;margin-left: 29px;margin-bottom: 31px;}
+.content-1 > p > .txt {font-weight: bold;}
+.content-1 > p > .num {font-size: 1rem;}
+.content-1 > p > .con-1 {margin-top: -27px;margin-left: 29px;}
+.content-1 > p > a > .num-1 { font-size: 1rem;padding-left: 30px;}
 
 /*footer*/
 footer{height: 150px;width: 1230px;}
