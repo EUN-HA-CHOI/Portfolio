@@ -213,14 +213,14 @@ header {overflow: hidden;top: 0; margin: 0; width: 100%;display: flex;flex-direc
 .aboutme h3 {font-size: 20px;padding-bottom: 45px;}
 .content {display: flex;flex-direction: row;}
 .col-img {padding-top: 70px;padding-left: 78px;}
-.myimg { z-index: 1; width: 295px;height: 306px;border-radius: 50%;position: relative;top: 29px;left: -1px;border-radius: 50%;}
+.myimg { z-index: 1; width: 295px;height: 306px;border-radius: 50%;position: relative;top: 29px;left: -45px;border-radius: 50%;}
 .content-low {padding-top: 116px;margin-left: 100px;display: flex;flex-direction: column;}
 .content-low h3 {font-size: 25px;font-weight: initial;}
 .content-low strong {color: #ed3770;font-weight: bold; font-size: 17px; line-height: 4;}
 .content-low p {line-height: 2; font-size: 16px; }
 .content-low p > .text {color: #ed3770;font-weight: bolder;}
 
-/*box*/
+/*box
 .box {display: flex;justify-content: center;align-items: center; width: 600px; height: 540px;border-radius: 5px; margin: 0 auto;
   box-shadow: 0 2px 30px rgba(black, .2);background: lighten(#f0f4c3, 10%);position: relative;    top: -476px;
   left: -193px;overflow: hidden;transform: translate3d(0, 0, 0);}
@@ -233,7 +233,7 @@ header {overflow: hidden;top: 0; margin: 0; width: 100%;display: flex;flex-direc
   @keyframes drift {
   from { transform: rotate(0deg); }
   from { transform: rotate(360deg); }
-}
+}*/
 
 /*about-2*/
 .about-2 {height: 135px;padding-top: 122px;}

@@ -39,55 +39,87 @@ a {text-decoration: none; font-style: none;color: black;}
 /*col-1*/
 .col-1 {height: 500px;max-width: 1200px;margin-left: auto;margin-right: auto;}
 .col-header{position: relative; display: flex;flex-direction: column; height: 300px; width: 500px;}
-.col-header > span:first-child {padding-left: 167px; padding-top: 118px; font-size: 20px; font-weight: 600; color: #777474;}
+.col-header > span:first-child {padding-left: 122px; padding-top: 118px; font-size: 20px; font-weight: 600; color: #777474;}
 .col-header > span:nth-child(2) {padding-left:58px; padding-top:34px; font-size: 32px;}
 .btn-group {display: flex;flex-direction: row;padding-top: 60px; padding-left:62px;}
 .btn-group > a > .btn {position: relative;border: none;margin-right: 32px; padding: 12px 23px;border-radius: 15px;font-family: "paybooc-Light", sans-serif;/*box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);*/
   text-decoration: none;font-weight: 600;transition: 0.25s;background-color: aliceblue;color: #1e6b7b;}
-.btn-group > a > .btn:hover { position: relative;padding: 15px 30px;border-radius: 15px;font-family: "paybooc-Light", sans-serif;
+.btn-group > a > .btn:hover {cursor: pointer; position: relative;padding: 15px 30px;border-radius: 15px;font-family: "paybooc-Light", sans-serif;
   color: #1e6b7b;background: aliceblue;box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);text-decoration: none;font-weight: 600;transition: 0.25s;border: 3px solid aliceblue;color: #1e6b7b;} 
 
 /*article*/
 .section-article {background-color: #FFF5F5;}
-.section {max-width: 75rem;padding: 5.5rem 1rem;margin: 0 auto;}
+.section {max-width: 80rem;padding: 5.5rem 1rem;margin: 0 auto;}
 .section-menu {position: relative;display: flex;flex-wrap: wrap;height: 520px;padding: 3rem;margin: 0 auto 2rem;border-radius: 1rem;background-color: #fff;box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);}
 .section-col {overflow: hidden;/*width: 50%;*/margin-right: 3rem;}
 
 /*mockup*/
-.col-mockup {position: relative;width: 480px;}
-.mockup-1 {position: absolute;top: -235px;left: 147%;}
-.mockupimac {width: 400px;height: 300px;}
-.mockup1-1 {position: absolute;top: 4%;left: 200px;width: 375px;height: 67%;background: url(../images/삼성전기mockup.JPG) no-repeat;
-  background-size: cover;background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 20s linear 0s infinite alternate;}
-
-  @keyframes mockup_ani {
+@keyframes mockup_ani {
   0% {background-position-y: 0;}
   100% {background-position-y: 100%;}
 }
-.mockup-2 {position: absolute;top: 132px;left: 14%;}
-.mockup1-2 {position: absolute;top: 4%;left: 200px;width: 375px;height: 67%;background: url(../images/삼성전기mockup.JPG) no-repeat;
-  background-size: cover;background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 20s linear 0s infinite alternate;}
+.col-mockup {position: relative;width: 490px;}
+.mockup-1 {position: absolute;top: -277px;left: 147%;}
+.mockupimac {width: 299px;height: 245px;}
+.mockup1-1 {position: absolute;
+  top: 4%;left: 151px;width: 281px;
+  height: 67%;background: url(../images/삼성전기mockup.JPG) no-repeat;background-size: cover;
+  background-position: 0% 0%;transform: translate(-50%, 0);
+  animation: mockup_ani 20s linear 0s infinite alternate;}
 
-  @keyframes mockup_ani {
-  0% {background-position-y: 0;}
-  100% {background-position-y: 100%;}
-}
+.mockup2 {position: absolute;top: -94px;left: 114%;}
+.mockup2-1 {position: absolute;
+  top: 4%;left: 151px;width: 281px;
+  height: 67%;background: url(../images/삼성전기\ sub1.png) no-repeat;background-size: cover;
+  background-position: 0% 0%;transform: translate(-50%, 0);
+  animation: mockup_ani 20s linear 0s infinite alternate;}
+.mockup3 {position: absolute;top: -94px;left: 180%;}
+.mockup3-1 {position: absolute;
+  top: 4%;left: 151px;width: 281px;
+  height: 67%;background: url(../images/삼성전기\ sub2.png) no-repeat;background-size: cover;
+  background-position: 0% 0%;transform: translate(-50%, 0);
+ }
+
+.mockup-2 {position: absolute;top: 13px;left: 29%;}
+.mockup1-2 {
+  position: absolute;
+  top: 4%;
+  left: 150px;
+  width: 285px;
+  height: 67%;
+  background: url(../images/삼성전기mockup.JPG) no-repeat;
+  background-size: cover;
+  background-position: 0% 0%;
+  transform: translate(-50%, 0);
+  animation: mockup_ani 20s linear 0s infinite alternate;
+  }
+.mockup4 {position: absolute;top: 261px;left: -103%;}
+.mockup4-1 {position: absolute;
+  top: 4%;left: 151px;width: 281px;
+  height: 67%;background: url(../images/삼성전기\ sub1.png) no-repeat;background-size: cover;
+  background-position: 0% 0%;transform: translate(-50%, 0);
+  animation: mockup_ani 20s linear 0s infinite alternate;}
+.mockup5 {position: absolute;top: 254px;left: 62%;}
+.mockup5-1 {position: absolute;
+  top: 4%;left: 151px;width: 281px;
+  height: 67%;background: url(../images/삼성전기\ sub2.png) no-repeat;background-size: cover;
+  background-position: 0% 0%;transform: translate(-50%, 0);}
 
 /*ection-col-1*/
-.section-col-1 {width: calc(48% - 3rem);margin-left:547px;margin-top: 13px;}
+.section-col-1 {width: calc(48% - 3rem);margin-left: 641px;margin-top: 13px;}
 .section-col-1 > .overview {height: 76px;margin-left: 20px;border-bottom: 1px solid #d7d8db;}
 .section-col-1 > .overview > p {line-height: 27px;}
 .section-col-1 > .overview > p::before {content: "✔";display: inline; padding-right: 0.5rem;}
-.section-col-1 > .overview > p > .text {color: #ed3770;}
+.section-col-1 > .overview > p > .text {box-shadow: inset 0 -4px 0 #ddd; font-weight: 600;}
 .view-header {margin-top: 33px;width: 795px;height: 131px;line-height: 27px;}
 .view-header > tbody > tr > th {/* border-bottom: 1px solid #e2e2e4;*/padding: 10px 22px; font-size: 15px; color: #222222; font-weight: 600;text-align: left;box-sizing: border-box;}
 .view-header > tbody > tr > th::before {content: "✔";display: inline; padding-right: 0.5rem;}
-.view-header > tbody > tr > td {/*border-bottom: 1px solid #e2e2e4;*/font-size: 15px;width: 337px; color: #727476;text-align: left;padding: 11px;box-sizing: border-box;line-height: 20px;}
-.view-header > tbody > tr > td > .text {color: #ed3770;}
+.view-header > tbody > tr > td {font-size: 15px;width: 337px; text-align: left;padding: 11px;box-sizing: border-box;line-height: 22px;}
+.view-header > tbody > tr > td > li >.text {box-shadow: inset 0 -4px 0 #ddd;color: initial;}
 
 /*modal*/
-.btn {border: none;background-color: transparent;cursor: pointer;}
-.btn .text {color: #ed3770;font-weight: bold;}
+.btnmodal {border: none;cursor: pointer;border-radius: 22px;width: 54px;height: 30px;}
+.btnmodal .text {font-weight: bold;}
 #modal.modal-overlay {width: 100%;position: absolute;left: 0;top: 0;display: none;flex-direction: column;
   align-items: center;justify-content: center;
   background: rgba(255, 255, 255, 0.25);box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);backdrop-filter: blur(1.5px);-webkit-backdrop-filter: blur(1.5px);border-radius: 10px;border: 1px solid rgba(255, 255, 255, 0.18);}
