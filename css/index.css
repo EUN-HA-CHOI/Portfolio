@@ -214,8 +214,8 @@ header {overflow: hidden;top: 0; margin: 0; width: 100%;display: flex;flex-direc
 .content {display: flex;flex-direction: row;}
 .col-img {padding-top: 70px;padding-left: 78px;}
 .myimg { z-index: 1; width: 295px;height: 306px;border-radius: 50%;position: relative;top: 29px;left: -45px;border-radius: 50%;}
-.content-low {padding-top: 116px;margin-left: 100px;display: flex;flex-direction: column;}
-.content-low h3 {font-size: 25px;font-weight: initial;}
+.content-low {padding-top: 116px;margin-left: 82px;display: flex;flex-direction: column;}
+.content-low h3 {font-size: 23px;font-weight: initial;}
 .content-low strong {color: #ed3770;font-weight: bold; font-size: 17px; line-height: 4;}
 .content-low p {line-height: 2; font-size: 16px; }
 .content-low p > .text {color: #ed3770;font-weight: bolder;}
