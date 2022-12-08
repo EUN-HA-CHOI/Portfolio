@@ -59,6 +59,7 @@ a {text-decoration: none;color: black;}
 .nav_menu {display: flex;flex-direction: row;height: 0;padding-right: 19px;}
 .nav-menu1 {position: relative;top: 17px; color: #555;}
 .nav-menu1:hover {color: #ed3770;}
+
 .sub-menu > a:hover {color: #ed3770;}
 .nav_menu>.sub-menu>li{ position: relative;width: 100%;padding: 18px 0;}
 .nav_menu>.sub-menu>li  button{display: block;padding-left: 26px;cursor: pointer;border: none;outline: none;background: transparent;font-size: 17px;color: #555;} 
@@ -67,7 +68,9 @@ a {text-decoration: none;color: black;}
 .nav_menu> .sub-menu>li>ul{display: none;position: absolute;margin-top: 9px;width: 89px;padding: 10px;border-radius: 10%;background-color: #FFF5F5;font-size: 14px;font-weight: 500;}
 .nav_menu > .sub-menu>li>ul.on{display: block;}
 .nav_menu > .sub-menu>li>ul>li{line-height:2;display: -webkit-inline-box;padding-left: 14px;}
-.nav_menu > .sub-menu>li>ul>li>a:hover{color: #ed3770;font-family: 'Outfit';text-decoration: underline;}
+.nav_menu > .sub-menu>li>ul>li>a {display: inline-block;position: relative;font-family: 'Outfit';}
+.nav_menu > .sub-menu>li>ul>li>a::after{content:"";position: absolute;left: 1%;bottom: 0;width: 0;height: 3px;background-color: #ed3770;transition: all .5s;}
+.nav_menu > .sub-menu>li>ul>li>a:hover::after {width: 100%;}
 
 /*header*/
 header {overflow: hidden;top: 0; margin: 0; width: 100%;display: flex;flex-direction: row;justify-content: center;text-align: center;}

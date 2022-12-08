@@ -34,8 +34,9 @@ a {text-decoration: none; font-style: none;color: black;}
 .gnb>.gnb_wrap> .sub-menu>li>ul{display: none;margin-top: 9px;z-index: 1;position: absolute;width: 89px;padding: 10px;border-radius: 10%;background-color: #FFF5F5;font-size: 14px;font-weight: 500;}
 .gnb>.gnb_wrap>.sub-menu>li>ul.on{display: block;}
 .gnb>.gnb_wrap>.sub-menu>li>ul>li{line-height: 2;display: -webkit-inline-box;padding-left: 12px;color: #555;}
-.gnb>.gnb_wrap>.sub-menu>li>ul>li>a:hover {color: #ed3770;font-family: 'Outfit';text-decoration: underline;}
-
+.gnb>.gnb_wrap>.sub-menu>li>ul>li>a {display: inline-block;position: relative;font-family: 'Outfit';}
+.gnb>.gnb_wrap>.sub-menu>li>ul>li>a::after{content:"";position: absolute;left: 1%;bottom: 0;width: 0;height: 3px;background-color: #ed3770;transition: all .5s;}
+.gnb>.gnb_wrap>.sub-menu>li>ul>li>a:hover::after {width: 100%;}
 /*col-1*/
 .col-1 {height: 500px;max-width: 1200px;margin-left: auto;margin-right: auto;}
 .col-header{position: relative; display: flex;flex-direction: column; height: 300px; width: 500px;}
