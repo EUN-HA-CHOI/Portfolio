@@ -55,12 +55,15 @@ a {text-decoration: none; font-style: none;}
 }
 .col-mockup {position: relative;width: 391px;left: -65px;top: -28px;}
 .mockup {position: absolute;top: -235px;left: 192%;}
-.mockup video{position: absolute;top: 6%;left: 50%;border-radius: 20px; width: 46%;object-fit: fill;height: 88%;background-size: cover;background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 15s linear 0s infinite alternate;}
-.mockupimac {width:390px;height: 398px;}
+.mockup video{position: absolute;top: 3%;left: 50%;border-radius: 10px;width: 298px;object-fit: fill;
+  height: 400px;background-size: cover;background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 15s linear 0s infinite alternate;}
+
+.mockupiPad-1{width: 316px;height: 427px;}
 
 /*mockup2*/
 .mockup2 {position: absolute;top: 108px;left: 22%;}
-.mockup2 video{position: absolute;top: 6%;left: 50%;border-radius: 20px;width: 46%;object-fit: fill;height: 88%;background-size: cover; background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 15s linear 0s infinite alternate;}
+.mockup2 video{position: absolute;top: 3%;left: 50%;border-radius: 10px;width: 298px;object-fit: fill;
+  height: 400px;background-size: cover; background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 15s linear 0s infinite alternate;}
 
 /*article*/
 .section-article {background-color: #FFF5F5;}

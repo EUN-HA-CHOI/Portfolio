@@ -53,13 +53,13 @@ a {text-decoration: none; font-style: none;color: black;}
   100% {background-position-y: 100%;}
 }
 .col-mockup {position: relative;width: 391px;left: -65px;top: -28px;}
-.mockup {position: absolute;top: -235px;left: 192%;}
+.mockup {position: absolute;top: -246px;left: 176%;}
 .mockup video{position: absolute;top: 6%;left: 50%;border-radius: 20px;width: 46%;object-fit: fill;
   height: 88%;background-size: cover;background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 15s linear 0s infinite alternate;}
-.mockupimac {width: 390px;height: 398px;}
+.mockupimac {width: 500px;height: 451px;}
 
 /*mockup2*/
-.mockup2 {position: absolute;top: 108px;left: 22%;}
+.mockup2 {position: absolute;top: 64px;left: 2%;}
 .mockup2 video{position: absolute;top: 6%;left: 50%;border-radius: 20px;width: 46%; object-fit: fill;
   height: 88%;background-size: cover; background-position: 0% 0%;transform: translate(-50%, 0);animation: mockup_ani 15s linear 0s infinite alternate;}
 
