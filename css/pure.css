@@ -58,7 +58,7 @@ a {text-decoration: none; font-style: none;color: black;}
   content: "Emoji";
   position: absolute;
   bottom: -40px;
-  left: calc(50% - 30%);
+  left: calc(50% - 17%);
   width: 60px;
   font-size: 18px;
   color: #8a8a8a;
